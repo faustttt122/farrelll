@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKT48</title>
+</head>
+<body>
+
+<header>
+    <h1>JKT48</h1>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+        <ul>
+            <li> <a href="#">Beranda</a></li>
+            <li> <a href="#">Tentang</a></li>
+            <li> <a href="#">Layanan</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            console.log("Toggle menu function called")
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active')
+        }
+        var menuItems =
+document.querySelectorAll('nav ul li a');
+        menuItems.forEach(function(item)
+{
+
+item.addEventListener('click',function() {
+    var nav = document.querySelector('nav')
+
+    nav.classList.remove('active')
+});
+});
+    </script>
+</header>
+</body>
+</html>
